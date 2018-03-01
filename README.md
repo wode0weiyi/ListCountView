@@ -3,6 +3,7 @@
 使用起来很简单，看代码
 
 //刚开始触摸的时候，显示总数据条数（可根据自己需求改变）
+    
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         let count = _dataArray.count
         //出现的调用方法
@@ -10,6 +11,7 @@
     }
     
  //结束触摸的时候，隐藏
+    
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         self._countView.hide()
     }
